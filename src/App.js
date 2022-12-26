@@ -3,8 +3,7 @@ import Navbar from './components/Navbar';
 import Form from './components/Form';
 import React,{ useState } from 'react';
 import Alert from './components/Alert';
-import About from './components/About';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+// import About from './components/About';
 
 
 
@@ -55,18 +54,10 @@ function App() {
 
     return ( 
     <>
-    {/* <Router> */}
     <Navbar title="Textutils" about="About Us" Mode={mode} Darkmode={darkmode} greenmode = {greenmode}/>
     <Alert Alert={alert} showAlert={showAlert}/>
     <Form/>
-    <About/>
-    {/* <div className='container my-3'>
-    <Routes>
-          <Route path="/about" element={<About/>} />
-          <Route path="/" element={<Form/>} />
-        </Routes>
-    </div>
-    </Router> */}
+
     </>
     );
 
