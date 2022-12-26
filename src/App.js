@@ -55,16 +55,18 @@ function App() {
 
     return ( 
     <>
-    <Router>
+    {/* <Router> */}
     <Navbar title="Textutils" about="About Us" Mode={mode} Darkmode={darkmode} greenmode = {greenmode}/>
     <Alert Alert={alert} showAlert={showAlert}/>
-    <div className='container my-3'>
+    <Form/>
+    <About/>
+    {/* <div className='container my-3'>
     <Routes>
           <Route path="/about" element={<About/>} />
           <Route path="/" element={<Form/>} />
         </Routes>
     </div>
-    </Router>
+    </Router> */}
     </>
     );
 
